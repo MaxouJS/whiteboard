@@ -1,4 +1,3 @@
-'use client'
 
 import { Loader2 } from './icons'
 import type { ReactNode } from 'react'

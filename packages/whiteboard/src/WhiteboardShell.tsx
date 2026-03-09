@@ -1,4 +1,3 @@
-'use client'
 
 import { useRef, useCallback, useEffect, type ReactNode, type PointerEvent, type WheelEvent } from 'react'
 import { ZoomBar } from './ZoomBar'

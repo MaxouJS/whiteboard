@@ -1,4 +1,3 @@
-'use client'
 
 import { X } from './icons'
 import { Button } from './Button'

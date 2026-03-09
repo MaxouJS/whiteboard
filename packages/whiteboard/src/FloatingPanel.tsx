@@ -1,4 +1,3 @@
-'use client'
 
 import { useRef, useId, useState, useCallback, useEffect, useLayoutEffect, memo, type ReactNode, type PointerEvent, type MutableRefObject } from 'react'
 import { Maximize2 } from './icons'

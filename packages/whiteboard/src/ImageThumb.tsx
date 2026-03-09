@@ -1,4 +1,3 @@
-'use client'
 
 import { useState, type HTMLAttributes, type ReactNode } from 'react'
 import { cn } from './cn'

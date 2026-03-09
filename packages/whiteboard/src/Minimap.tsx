@@ -1,4 +1,3 @@
-'use client'
 
 import { useRef, type PointerEvent, type WheelEvent } from 'react'
 import { Loader2 } from './icons'

@@ -1,4 +1,3 @@
-'use client'
 
 import { useEffect, type ReactNode } from 'react'
 import { Grid3x3, Minus, Plus, RotateCcw, ScanSearch } from './icons'
