@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   FloatingPanel, PanelSection,
   Input, Textarea, Select, Field, CoordGrid, CoordInput,
@@ -26,9 +25,6 @@ const CODE = `<Field label="Name" hint="Your display name">
 </CoordGrid>`
 
 export function FormsPanel({ defaultPosition }: { defaultPosition: { x: number; y: number } }) {
-  const [x, setX] = useState(0)
-  const [y, setY] = useState(0)
-
   return (
     <FloatingPanel title="Forms" defaultPosition={defaultPosition} width={380} focusable>
       <PanelSection heading="Input">
@@ -43,7 +39,7 @@ export function FormsPanel({ defaultPosition }: { defaultPosition: { x: number; 
       </PanelSection>
       <PanelSection heading="Select">
         <Field label="Theme">
-          <Select>
+          <Select defaultValue="Light">
             <option>Light</option>
             <option>Dark</option>
             <option>System</option>
@@ -52,8 +48,8 @@ export function FormsPanel({ defaultPosition }: { defaultPosition: { x: number; 
       </PanelSection>
       <PanelSection heading="CoordGrid">
         <CoordGrid>
-          <CoordInput axis="X" value={x} onChange={e => setX(Number(e.target.value))} />
-          <CoordInput axis="Y" value={y} onChange={e => setY(Number(e.target.value))} />
+          <CoordInput axis="X" defaultValue={0} />
+          <CoordInput axis="Y" defaultValue={0} />
         </CoordGrid>
       </PanelSection>
       <CodeBlock code={CODE} />

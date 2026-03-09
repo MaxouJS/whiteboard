@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   FloatingPanel, PanelSection,
   Button, ButtonRow, PanelCloseButton,
@@ -19,13 +18,6 @@ const CODE = `<Button>Primary</Button>
 <PanelCloseButton onClick={onClose} />`
 
 export function ButtonsPanel({ defaultPosition }: { defaultPosition: { x: number; y: number } }) {
-  const [loading, setLoading] = useState(false)
-
-  const simulateLoad = () => {
-    setLoading(true)
-    setTimeout(() => setLoading(false), 1500)
-  }
-
   return (
     <FloatingPanel title="Button" defaultPosition={defaultPosition} width={360} focusable>
       <PanelSection heading="Variants">
@@ -37,9 +29,7 @@ export function ButtonsPanel({ defaultPosition }: { defaultPosition: { x: number
       </PanelSection>
       <PanelSection heading="States">
         <div className="demo-row">
-          <Button loading={loading} loadingText="Saving…" onClick={simulateLoad}>
-            {loading ? 'Saving…' : 'Click to load'}
-          </Button>
+          <Button loading loadingText="Saving…">Save</Button>
           <Button disabled>Disabled</Button>
         </div>
       </PanelSection>
