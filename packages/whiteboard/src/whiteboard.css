@@ -647,6 +647,13 @@ button.chip:hover {
   gap: 0.5rem;
 }
 
+.space-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.36rem;
+}
+
 .list-reset {
   margin: 0;
   padding: 0;

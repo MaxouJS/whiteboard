@@ -3,7 +3,7 @@ import { cn } from './cn'
 
 interface InlineProps extends HTMLAttributes<HTMLElement> {
   as?: ElementType
-  justify?: 'start' | 'between'
+  justify?: 'start' | 'between' | 'end'
 }
 
 export function Inline({
@@ -12,8 +12,9 @@ export function Inline({
   className,
   ...props
 }: InlineProps) {
+  const cls = justify === 'between' ? 'space-between' : justify === 'end' ? 'space-end' : 'inline-row'
   return createElement(as ?? 'div', {
-    className: cn(justify === 'between' ? 'space-between' : 'inline-row', className),
+    className: cn(cls, className),
     ...props,
   })
 }
