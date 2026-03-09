@@ -1,7 +1,10 @@
 import './theme.css'
 import '@objectifthunes/whiteboard/style.css'
 import './demo.css'
-import { WhiteboardShell, ThemeToggle, useWhiteboardLayout, WHITEBOARD_GRID } from '@objectifthunes/whiteboard'
+import { WhiteboardShell, ThemeToggle, useWhiteboardLayout, useWhiteboardStore, WHITEBOARD_GRID } from '@objectifthunes/whiteboard'
+
+// Expose store for screenshots.mjs
+;(window as any).__wb = useWhiteboardStore
 import { GettingStartedPanel } from './panels/GettingStartedPanel'
 import { ButtonsPanel } from './panels/ButtonsPanel'
 import { FormsPanel } from './panels/FormsPanel'

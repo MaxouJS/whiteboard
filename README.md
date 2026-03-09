@@ -2,6 +2,14 @@
 
 A pan/zoom whiteboard canvas for React with draggable floating panels, a minimap, snap-to-grid, and a complete set of UI primitives — all themed via CSS custom properties.
 
+<p align="center">
+  <img src="docs/images/overview.png" width="49%" alt="All panels, light mode" />
+  <img src="docs/images/dark.png" width="49%" alt="All panels, dark mode" />
+</p>
+<p align="center">
+  <img src="docs/images/detail.png" width="98%" alt="Panels zoomed in" />
+</p>
+
 ## Features
 
 - **Pan & zoom canvas** — drag to pan, scroll to zoom, pointer-capture safe
