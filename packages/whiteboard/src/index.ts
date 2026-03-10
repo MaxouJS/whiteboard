@@ -21,8 +21,10 @@ export { cn } from './cn'
 
 // UI components
 export { Alert } from './Alert'
+export { AvatarBadge } from './AvatarBadge'
 export { Button } from './Button'
 export { ButtonRow } from './ButtonRow'
+export { CanvasStage } from './CanvasStage'
 export { Chip } from './Chip'
 export { ChoiceCard } from './ChoiceCard'
 export { ChoiceGroup, ChoiceGroupSkeleton } from './ChoiceGroup'
@@ -40,6 +42,7 @@ export { ItemList } from './ItemList'
 export { Label } from './Label'
 export { List } from './List'
 export { LoadingState } from './LoadingState'
+export { OverlayIconButton } from './OverlayIconButton'
 export { PageCard, PageShell } from './PageLayout'
 export { PanelCloseButton } from './PanelCloseButton'
 export { PanelSection } from './PanelSection'
@@ -68,6 +71,7 @@ export { TagRow } from './TagRow'
 export { Textarea } from './Textarea'
 export { ThemeToggle } from './ThemeToggle'
 export { TitleRow } from './TitleRow'
+export { VerticalToolbar } from './VerticalToolbar'
 export {
   AssetTitle,
   StoryTitle,
